@@ -3,3 +3,8 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+create_domain:
+    path: /api/domains
+    controller: App\Controller\DomainController::createDomain
+    methods: [POST]
